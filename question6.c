@@ -6,7 +6,7 @@ scanf("%d%d", &a, &b);
 c = a;
 a = b;
 b = c;
-printf("your value of first is %d and second is %d\n", a, b);
+printf("your value of first is %d and second is %d\n", a, c);
 return 0;
 }
 
