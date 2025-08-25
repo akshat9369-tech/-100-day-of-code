@@ -13,7 +13,7 @@ float ci;
  printf("enter the compounding frequency\n");
  scanf("%d", &n);
  si = (p*r*t)/100;
- ci = p *(1+r/n)^(n*t);
+ ci = p * pow((1 + (r / (100 * n))), n * t) - p;
  printf(" your value of simple interest is %d\n", si);
  printf(" your value of compound interest is %f\n", ci);
  }
