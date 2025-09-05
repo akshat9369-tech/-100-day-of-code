@@ -12,7 +12,7 @@ p = s - c;
 ps = (p/c)*100;
 printf("%f%%\n",ps);
 }
-if else( c == s){
+if else ( c == s){
 printf(" no profit no loss");
 }
 else{
