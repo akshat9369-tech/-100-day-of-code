@@ -8,7 +8,6 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    // Temporary variable to control the loop
     int temp = num;
 
     for (; temp != 0; temp /= 10) {
