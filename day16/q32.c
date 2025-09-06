@@ -9,11 +9,7 @@ int main() {
     scanf("%d", &num);
 
     original = num;
-
-    // Count the number of digits
     int digits = (num == 0) ? 1 : (int)log10(num) + 1;
-
-    // Reverse the number using a for loop
     for (int i = 0; i < digits; i++) {
         int digit = num % 10;
         reversed = reversed * 10 + digit;
