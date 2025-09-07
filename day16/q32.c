@@ -1,5 +1,6 @@
  //q.32 Write a program to check if a number is a palindrome.
  #include <stdio.h>
+#include <math.h>
 
 int main() {
     int num, original, reversed = 0;
@@ -7,16 +8,14 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    original = num;  // Store the original number
-
-    // Reverse the number
-    while (num != 0) {
+    original = num;
+    int digits = (num == 0) ? 1 : (int)log10(num) + 1;
+    for (int i = 0; i < digits; i++) {
         int digit = num % 10;
         reversed = reversed * 10 + digit;
-        num = num / 10;
+        num /= 10;
     }
 
-    // Check if original and reversed are the same
     if (original == reversed)
         printf("%d is a palindrome.\n", original);
     else
@@ -24,4 +23,3 @@ int main() {
 
     return 0;
 }
-
