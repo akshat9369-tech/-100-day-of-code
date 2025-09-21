@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 int main(){
-int a,b,c;
+int a,b;
 printf("enter your two  number");
 scanf("%d%d", &a,&b);
 printf(" your value before swap is %d and %d\n",a,b);  
