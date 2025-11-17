@@ -18,3 +18,33 @@ Output 3:
 We Are Going To Look At 26 Different Test Cases.
 
 */
+  #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int main() {
+    char str[1000];
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+    }
+    int capitalize = 1;
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (isspace(str[i])) {
+            capitalize = 1;
+        } else if (capitalize && isalpha(str[i])) {
+            str[i] = toupper(str[i]);
+            capitalize = 0;
+        } else {
+            str[i] = tolower(str[i]);
+        }
+    }
+
+    printf("Sentence case: %s\n", str);
+
+    return 0;
+}
