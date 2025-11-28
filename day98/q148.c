@@ -24,6 +24,7 @@ int areSame(struct Student s1, struct Student s2) {
         return 1; 
     return 0; 
 }
+}
 
 int main() {
     struct Student st1, st2;
