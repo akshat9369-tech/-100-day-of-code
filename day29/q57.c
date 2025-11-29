@@ -1,0 +1,17 @@
+//Q57 Find the sum of array elements.
+#include<stdio.h>
+int main(){
+int n, sum= 0 ;
+printf("enter the number of element in array");
+scanf("%d", &n);
+int arr[n];
+printf(" enter the number of array:");
+for (int i =1; i <=n ; i++){
+scanf("%d", &arr[i]);
+}
+for (int i=1; i<=n ; i++){
+ sum= sum + arr[i];
+ }
+ printf("the sum of array is %d\n", sum );
+ return 0;
+ }
